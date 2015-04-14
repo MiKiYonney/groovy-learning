@@ -12,5 +12,23 @@ class Syntax {
         // parser xml
         def xml = new XmlSlurper().parse(new File("text.xml"))
 
+        //基本语法
+        def x =1;
+        assert x instanceof Integer
+
+        //list
+        def roman = ['','1','2','3','4','5']
+        assert roman[4] == '4'
+        //map
+        def http = [
+                100 : 'continue',
+                200 : 'OK',
+                400 : 'Bad Request'
+        ]
+        assert http[200] == 'OK'
+        //ranges
+        def ranges = 1..10;
+        assert ranges.contains(5)
+        assert ranges.reverse = 10..1;
     }
 }
