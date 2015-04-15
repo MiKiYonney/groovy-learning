@@ -29,6 +29,16 @@ class Syntax {
         //ranges
         def ranges = 1..10;
         assert ranges.contains(5)
-        assert ranges.reverse = 10..1;
+        assert ranges.reverse == 10..1;
+        //closure
+        def totalClinks = 0;
+        def partyPeople = 100;
+        1.upto(partyPeople{guestNumber ->
+            clinksWithGuest = guestNumber -1;
+            totalClinks += clinksWithGuest;
+        })
+        assert totalClinks == (partyPeople*(partyPeople-1))/2
+
+
     }
 }
