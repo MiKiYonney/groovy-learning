@@ -43,5 +43,9 @@ class Syntax {
         def code = '1+ '
         code += System.getProperty('os.version')
         println(code)
+
+        //Integer-int
+        Integer a = 1;
+        a.plus("1");
     }
 }
