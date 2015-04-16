@@ -39,6 +39,9 @@ class Syntax {
         })
         assert totalClinks == (partyPeople*(partyPeople-1))/2
 
-
+        //groovy生命周期
+        def code = '1+ '
+        code += System.getProperty('os.version')
+        println(code)
     }
 }
