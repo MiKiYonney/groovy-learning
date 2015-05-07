@@ -59,6 +59,9 @@ class ListTest {
         def odd = [1,2,3].findAll {item -> item % 2 == 1 }
         assert odd == [1,3]
 
+        def x = [1,null,1]
+        assert [1,1] == x.findAll { it != null }
+        assert [1,1] == x.grep(it)
     }
 
 }
