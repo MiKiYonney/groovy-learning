@@ -61,7 +61,33 @@ class ListTest {
 
         def x = [1,null,1]
         assert [1,1] == x.findAll { it != null }
-        assert [1,1] == x.grep(it)
-    }
+        //assert [1,1] == x.grep(it != null)
 
+        list = [1,2,3];
+        assert list.max() == 3;
+        assert list.count(2) == 1
+        assert list.min() == 1;
+
+        def even = list.find {
+            item -> item % 2 == 0
+        }
+        assert even ==2
+        assert list.every{
+            item ->item <5
+        }
+        assert list.any{
+            item ->item <5
+        }
+        def store =''
+        list.each {
+            item->store+=item
+        }
+        assert store =="123"
+        list.reverseEach {
+            item->store+=item
+        }
+        assert store =="321"
+        assert list.join("-") == "1-2-3"
+
+    }
 }
