@@ -14,6 +14,7 @@ class ClosureTest {
         assert log == '12345678910'
         // 赋值声明闭包
         def printer = {line -> print(line)}
+        //方法闭包
     }
 
     def Closure getPrinter(){
