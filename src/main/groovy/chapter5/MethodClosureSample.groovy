@@ -14,7 +14,7 @@ class MethodClosureSample {
         return value.length() <= limit
     }
 
-    public static void main(String[] args) {
+     static main(args) {
         MethodClosureSample first = new MethodClosureSample(6);
         MethodClosureSample second = new MethodClosureSample(5);
         Closure firstClosure = first.&validate;
