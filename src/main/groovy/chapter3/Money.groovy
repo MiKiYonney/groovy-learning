@@ -35,9 +35,5 @@ class Money {
     }
 
     public static void main(String[] args) {
-        def buk = new Money(1,"USD")
-        assert buk;
-        assert buk == new Money(1,"USD")
-        assert buk + buk == new Money(2,"USD")
     }
 }
