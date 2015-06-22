@@ -26,7 +26,7 @@
 
     <name>groovy-learning</name>
     <modules>
-        <module>groovy-spider</module>
+        <module>groovy-crawler</module>
         <module>groovy-grammar</module>
     </modules>
     <groupId>groovy-learning</groupId>
@@ -54,12 +54,28 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>1.7.0</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.6.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>1.7.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.codehaus.gpars</groupId>
+                <artifactId>gpars</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
