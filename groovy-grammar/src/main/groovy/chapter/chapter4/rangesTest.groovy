@@ -1,4 +1,4 @@
-package chapter4
+package chapter.chapter4
 
 /**
  * Created by yonney.yang on 2015/5/4.
