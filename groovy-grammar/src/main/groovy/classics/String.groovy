@@ -55,6 +55,17 @@ println rhyme =~'^humpty'
 println rhyme =~'^wall$'
 
 
+//占位符支持表达式,最后一个表达式需要有值返回
+println "${def a1 = 1; def b1 = 2; a1 + b1}"
+
+
+def number = 3.14
+println "${number.toString()}";
+
+
+//Special case of interpolating closure expressions
+
+
 
 
 
