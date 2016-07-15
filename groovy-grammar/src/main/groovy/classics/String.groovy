@@ -65,7 +65,22 @@ println "${number.toString()}";
 
 //Special case of interpolating closure expressions
 
+def name = "Guillaume"
+def date = "April, 1st"
 
+def dollarSlashy = $/
+    Hello $name,
+    today we're ${date}.
+
+    $ dollar sign
+    $$ escaped dollar sign
+    \ backslash
+    / forward slash
+    $/ escaped forward slash
+    $/$ escaped dollar slashy string delimiter
+/$
+
+println dollarSlashy
 
 
 

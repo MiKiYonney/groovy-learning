@@ -28,3 +28,9 @@ def key = "a"
 def m = ["${key}": "letter ${key}"]
 
 assert m["a"] == null  //取不到
+
+
+
+
+
+

@@ -1,12 +1,14 @@
 package advanced
 
+import document.beans.Car
+
 /**
  * Created by yonney on 16/7/4.
  * RootLoader如何体现为Groovy的classpath管理者
  */
 
 println this.class.classLoader;
-println C.classLoader;
+println Car.classLoader;
 println()
 
 println groovy.ui.GroovyMain.classLoader
